@@ -11,7 +11,7 @@
 }
 body{
     font-size: 16px;
-    font-family: Georgia, 'Times New Roman', Times, serif ;
+    font-family: Poppins, Arial, sans-serif;
 }
 nav {
     background-color: var(--background-color);
@@ -25,6 +25,7 @@ nav a {
 h1 {
     color: var(--background-color);
     padding: .5rem ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
 }
 img {
     width: var(--width);
@@ -79,13 +80,16 @@ footer{
 /* Class Selectors */
 .box{
     margin: 1rem;
-    border: 1px solid rgba(0 0 0 / .1);
+    border: 1px solid rgba(0,0,0,.1);
     padding: 1rem;
     background-color: #eee;
     color: #000;
 }
 aside {
     width: 15em;
-    text-align: center;
+    text-align: left;
+}
+.ident {
+    padding-left: 2rem;
 }
 
