@@ -3,9 +3,10 @@ head: {
 
 }
 body{
-    font-family: poppins-regular, sans-serif ;
-    font-weight:  800;
+    font-family: poppins-regular, roboto, sans-serif ;
+    font-weight:  700;
 }
 h1 {
-    font-weight: 300;
+    font-family: permanent-marker, 'rock salt', serif;
+    font-weight: 400;
 }
