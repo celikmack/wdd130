@@ -5,20 +5,59 @@
     --accent2-color: dde5b6 
 }
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: Poppins-regular, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+header {
+    background-color: #6c584c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin:  15px;
+    font-weight: 700;
+    text-align: center;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
 .hero {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
     padding: 10px;
 }
-.hero img {
+img {
     display: block;
     max-width: 100%;
     height: auto;
 }
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
 .hero h1 {
-    font-size: 36px;
+    top: 1rem;
+    font-size: 50px;
     margin: 20px 0;
     color: white;
     position: absolute;
@@ -32,44 +71,65 @@ body {
 }
 .hero article p {
     font-size: 18px;
-    color: #000;
+    color: branco;
+    text-align: left; 
+}
+.box{
+    margin: 1rem;
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 1rem;
+    background-color: rgba(127, 255, 148, 0.556);
+    color: white;
+    opacity: 0.9;
+    box-shadow: 0 0 30px #111;   
 }
 .history {
-    padding: 10px;
+    padding: 2px;
+    text-align: center;
+    background-color: #b3e0ff;
 }
 .history h2 {
     font-size: 30px;
+    margin-bottom: 20px;
     color: #003366;
 }
 .history p {
     font-size: 18px;
     color: #000;
 }
+section {
+    padding: 20px;
+    text-align: center;
+}
 section h2 {
     font-size: 30px;
+    margin-bottom: 20px;
     color: #003366;
-    
 }
 section img {
-    margin: 10px;
-    max-width: 100%;
-    height: auto;
+        margin: 10px;
+        max-width: 100%;
+        height: auto;
 }
 footer {
-  
-    color: #000
+    background-color:  #6c584c;
+    color: white;
+    text-align: center;
     padding: 10px 20px;
 }
 
 footer p {
     margin: 10px 0;
 }
-nav a {
-    text-decoration: none;
+.sociallinks {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
-.sociallinks img {
-    width: 30px;
-    height: 30px;
+
+.sociallinks a img {
+    width: 10px;
+    height: 10px;
 }
 
     
