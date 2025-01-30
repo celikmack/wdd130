@@ -1,98 +1,58 @@
-:root{
-    background-color: #6c584c;
-    padding: 1rem;
-    width: 150px;
-    height: auto;
+:root {
+    --primary-color: 6c584c;
+    --secondary-color: a98467;
+    --accent1-color: 1dc178;
+    --accent2-color: dde5b6;
+    --font-family1: Poppins-regular, serif;
+    --font-family2: poppins-bold,serif;
 }
 body{
-    font-size: 16px;
-    font-family: Poppins-regular, Roboto, sans-serif;
+    font-size: 20px;
+    font-family: Poppins-regular, serif;
 }
-nav {
-    background-color: #a98467;
-    padding: 1rem;
-}       
-h1 {
-    color: black;
-    padding: 1rem;
-    font-family: Permanent-marker, "Rock Salt", sans-serif;
-    position: absolute;
-}
-img {
-    width: 150px;
-    height: auto;
-    border: 1px solid black;
-    padding: 1rem;
-    box-shadow: 0 0 30px gray;
-}
-p {
-    padding: 1rem;
-}
-main {
-    max-width: 840px;
-}
-img {
-    width: 200px;
-    height: auto
-}
-h1 {
-    color: black;
-    color: black;
-    padding: 1rem;
-    font-family: Permanent-marker, "Rock Salt", sans-serif;
-    position: absolute;
-}
-article {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0, 0, 0 / 0.2);
-    padding: 1rem;
-    background-color: #adc178;
-    color: black;
-    text-align: right;
-    position: absolute;
-}
-article img {
-    width: 150px;
-    height: auto;
-    float: left;
-}
-
-article h2 {
-    position: absolute;
-    top: 40px;
-    left: 100px;
-}
-p {
-    padding: 1rem;
-}    
-footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
-}
-a {
-    text-decoration: none;
-}
-/* Class selectors */
-.sociallinks {
-    margin: 1rem;
-    border: 1px solid rgba(0,0,0,.1);
-    padding: 1rem;
-    background-color: #eee;
-    color: #000;  
-}   
-.logo {
-    width: 3%;
-    float: left;
-    height: auto;
-}
-.hero {
+.hero img {
     display: block;
     width: 100%;
     height: auto;
 }
+h1 {
+    font-family: var(--font-family1);
+    font-weight: 700;
+    color: white;
+    position: absolute;    
+}
+article p {
+    font-family: var(--font-family2);
+    font-weight: 400;
+    color: white;
+    text-align: left;
+    position: absolute;
+}
+article image{
+
+}
+h2 {
+    position: absolute;
+    top: 40px;
+    left: 100px;
+}
+h2 {
+    font-family: var(--font-family1);
+    font-weight: 700;
+    color: darkblue;
+}
+p {
+    font-family: var(--font-family2);
+    font-weight: 400;
+    color: black;
+    text-align: left;
+}
+a {
+    text-decoration: none;
+}
+
+    
+    
 
 
 
-  
