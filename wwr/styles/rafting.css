@@ -41,9 +41,12 @@ nav a:hover {
     width: 100%;
     max-width: 1400px;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
 }
+
 img {
-    display: block;
+    
     max-width: 100%;
     height: auto;
 }
