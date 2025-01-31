@@ -1,8 +1,8 @@
 :root {
-    --primary-color: 6c584c;
-    --secondary-color: a98467;
-    --accent1-color: adc178;
-    --accent2-color: dde5b6 
+    --primary-color: a98467;
+    --secondary-color: adc178;
+    --accent1-color: dde5b6;
+    --accent2-color: f0ead2; 
 }
 body {
     font-family: Poppins-regular, sans-serif;
