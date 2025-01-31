@@ -8,34 +8,8 @@ body {
     font-family: Poppins-regular, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    
 }
-header {
-    background-color: #6c584c;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-}
-
-.logo img {
-    max-width: 100%;
-    height: auto;
-
-}
-nav a {
-    color: white;
-    text-decoration: none;
-    margin:  15px;
-    font-weight: 700;
-    text-align: center;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
 .hero {
     position: relative;
     width: 100%;
@@ -43,100 +17,58 @@ nav a:hover {
     padding: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-img {
-    
+.img {
     max-width: 100%;
     height: auto;
 }
 .overlay {
     position: absolute;
-    top: 50%;
-    left: 50%;
     color: white;
     text-align: center;
-    padding: 20px;
 }
-.hero h1 {
+h1 {
     top: 1rem;
     font-size: 50px;
-    margin: 20px 0;
     color: white;
-    position: absolute;
-}
-.hero article {
-    margin-top: 5px;
-}
-.hero article img {
-    max-width: 100%;
-    height: auto;
-}
-.hero article p {
-    font-size: 18px;
-    color: branco;
-    text-align: left; 
-}
-.box{
+    background-color: rgba(169, 169, 169, 0.414);
+    margin: 1rem;
+}   
+article {
     margin: 1rem;
     border: 1px solid rgba(0,0,0,.1);
     padding: 1rem;
     background-color: rgba(127, 255, 148, 0.556);
-    color: white;
-    opacity: 0.9;
-    box-shadow: 0 0 30px #111;   
-}
-.history {
-    padding: 2px;
-    text-align: center;
-    background-color: #b3e0ff;
-}
-.history h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
-    color: #003366;
-}
-.history p {
-    font-size: 18px;
-    color: #000;
-}
-section {
+    box-shadow: 0 0 30px #111;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    text-align: center;
+    align-items: normal;
 }
-section h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
-    color: #003366;
-}
-section img {
-    margin: 10px;
+article img {
     max-width: 100%;
     height: auto;
 }
-section figure  {
-    border: 1px cor solid #579;
-    padding: 4px;
-    margin: auto;
-}
-section figcaption{
-    color: #000;
-    font-style: italic;
-    padding: 2px;
+article p {
+    font-size: 18px;
+    color: white;
     text-align: center; 
 }
+history h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+history p {
+    font-size: 18px;
+    color: #000;
+}
+
 footer {
-    background-color:  #6c584c;
-    color: white;
-    text-align: center;
-    padding: 10px 20px;
+    color: #000
 }
 
 footer p {
-    margin: 10px 0;
+    margin: 20px 0;
 }
 .sociallinks {
     display: flex;
