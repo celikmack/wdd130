@@ -1,81 +1,178 @@
 :root {
-    --primary-color: a98467;
-    --secondary-color: adc178;
-    --accent1-color: dde5b6;
-    --accent2-color: f0ead2; 
+    --primary-color: #a98467;
+    --secondary-color: #adc178;
+    --accent1-color: #dde5b6;
+    --accent2-color: #e5e0b6fd; 
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 body {
     font-family: Poppins-regular, sans-serif;
-    margin: 0;
-    padding: 0;
-    
+    font-weight: 400;
 }
-.hero {
-    position: relative;
-    width: 100%;
-    max-width: 1400px;
-    padding: 10px;
+h1, h2, h3, h4, h5, h6 {
+    font-family: Poppins-regular, Roboto, sans-serif;
+    font-weight: 700;
+}
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 2rem 3rem;
+    background-color: var(--primary-color);
+    color: white;
 }
-
-.img {
-    max-width: 100%;
+header img {
+    width: 150px;
     height: auto;
 }
-.overlay {
-    position: absolute;
-    color: white;
-    text-align: center;
-}
-h1 {
-    top: 1rem;
-    font-size: 50px;
-    color: white;
-    background-color: rgba(169, 169, 169, 0.414);
-    margin: 1rem;
-}   
-article {
-    margin: 1rem;
-    border: 1px solid rgba(0,0,0,.1);
-    padding: 1rem;
-    background-color: rgba(127, 255, 148, 0.556);
-    box-shadow: 0 0 30px #111;
-    display: flex;
-    align-items: normal;
-}
-article img {
-    max-width: 100%;
-    height: auto;
-}
-article p {
-    font-size: 18px;
-    color: white;
-    text-align: center; 
-}
-history h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-history p {
-    font-size: 18px;
-    color: #000;
-}
-
-footer {
-    color: #000
-}
-
-footer p {
-    margin: 20px 0;
-}
-.sociallinks {
+header nav {
+    width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    justify-self: center;
 }
-.sociallinks a img {
-    width: 10px;
-    height: 10px;
+header nav a {
+    text-decoration: none;
+    color: white;
+    padding: 2rem 3rem;
+    text-align: center;
+    background-color: var(--primary-color);
 }
+p, nav a {
+    font-family: Poppins-regular, sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.hero {
+    position: relative;
+    margin-top: 5rem;
+}
+.hero > img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+.hero h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color:var(--accent2-color); 
+    opacity: .9;
+    color: #000;
+}
+.hero article {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%);
+    width: 80%;
+    margin: 1rem;
+    background-color: var(--accent1-color);
+    opacity: 0.9; 
+}
+.hero article h2 {
+    grid-column: 1/4;
+    text-align: center;
+    padding: 50px;
+    font-size: 2rem;
+}
+.hero article p {
+    padding: 10px;
+    color: var(--accent2-color);
+    color: #000;
+    text-align: justify;
+}
+.hero article img {
+    float: right;
+    padding: 5px;
+}
+.history {
+    background-color: var(--accent2-color);
+    padding: 1rem;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.history img {
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 70px gray;
+}
+.history h2 {
+    grid-column: 1/4;
+    text-align: center;
+    padding: 50px;
+    font-size: 2rem;
+}
+.history p {
+    padding: 50px;
+    color: var(--accent2-color);
+    color: #000;
+    font-size: 1.5rem;
+}
+.pictures {
+    background-color: var(--accent2-color);
+    padding: 1rem;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+.pictures h2 {
+    grid-column: 1/6;
+    padding: 50px;
+    text-align: center;
+    font-size: 2rem;
+}
+.pictures figure {
+    text-align: center;
+}
+.pictures img {
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+}
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: left;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+footer nav a{
+    text-decoration: none;
+    margin: 0 1rem;
+    
+}
+footer nav img {
+    width: 30px;
+    height: 35px;
+}
+footer p{
+    margin-bottom: 1rem;
+}
+
+
+    
+
+    
+    
+
+
+
