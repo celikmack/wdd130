@@ -11,7 +11,7 @@ nav a {
 }
 
 main {
-    width: 840px;
+    max-width: 840px;
 }
 
 main h1 {
