@@ -19,7 +19,7 @@ header {
 }
 
 body {
-    font-family: var(--font-family1)
+    font-family: var(--font-family1);
     color: var(--accent1-color);
 }
 
