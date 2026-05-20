@@ -6,87 +6,136 @@
 
 :root {
     --color1: #00008b;
-    --border: 1px solid black;
+    --color2: #fff;
+    --border-radius: 8px;
+    --box-shadow: 0 0 30px;
+}
 
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
 }
 
 body {
-    font-size: 16px;
+    background: linear-gradient(lightblue, lightyellow);
+    font-size: 17px;
     font-family: Noto, Arial, sans-serif;
+    color: var(--color1);
 }
- 
+
 nav {
     background-color: var(--color1);
-    padding: 10px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+
 }
 
 nav a {
-    color: white;
+    color: var(--color2);
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+a:hover {
+    color: orange;
 }
 
 main {
-    max-width: 840px;
+    max-width: 640px;
+    grid-column: 2/3;
+    margin: 1rem;
 }
 
 main h1 {
     color: var(--color1);
     padding: .5rem;
+    text-align: center;
+    border-bottom: 2px solid navy;
+    /* This is only to practice comments. It's the same for C# */
 }
 
 main img {
     float: right;
     width: 150px;
     height: auto;
-    margin: 0 0 1rem 1rem;
-    border: var(--border);
+    margin: 1rem;
     padding: 2px;
-    box-shadow: 0 0 30px gray;
 }
 
 p {
-    padding: 1rem;
+    margin: 1rem;
+    text-align: left;
 }
 
 aside {
     position: relative;
-    width: 20em;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / .2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    width: 20rem;
+    grid-row: 1;
     text-align: center;
 }
 
 aside img {
     margin: 1rem;
-    width: 200px;
+    width: 250px;
     height: auto;
-    border: 4px inset darkblue;
-    box-shadow: 0 0 30px;
+}
+
+main img, aside img {
+    border: 4px inset var(--color1);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
 }
 
 aside h2 {
     position: absolute;
     top: 60px;
-    left: 65px;
+    left: 125px;
+}
+
+a {
+    color: var(--color1);
 }
 
 footer {
+    background-color: var(--color1);
+    padding: 20px;
     margin-top: 15px;
-    border-top: var(--border);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    color: var(--color2);
+    text-align: center;
+}
+
+footer p {
     text-align: center;
 }
 
 /* Class Selectors */
 
+.grid {
+    display: grid;
+    align-items: center;
+}
+
 .box {
     margin: 1rem;
     padding: 1rem;
-    border: 1px solid rgb(0 0 0 / 10%);
-    background-color: #eee;
-    color: #000;
-
+    border: 3px solid var(--color1);
+    background-color: #ddd;
 }
+
+.list {
+    padding-left: 2rem;
+    list-style-type: square;
+}
+
+
