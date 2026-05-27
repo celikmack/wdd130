@@ -6,6 +6,7 @@
     --heading-color: #00008b;
     --font-color: #fff;
     --shadow-color: grey;
+    
 }
 
 * {
@@ -14,6 +15,12 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.6;
+}
+
+main h1 {
+    text-align: center;
+    color: var(--primary-color);
+    font-family: cursive;  
 }
 
 header {
@@ -33,8 +40,8 @@ nav a {
 
 h1,
 h2 {
-    color: var(--heading-color);
-    font-family: cursive;
+    color: var(--primary-color);
+    font-family: var(--font-family);
 }
 
 nav {
@@ -160,7 +167,7 @@ header:hover::after {
     opacity: .8;
 }
 
-.hero article {
+.article {
     position: absolute;
     bottom: 25px;
     right: 25px;
@@ -172,11 +179,11 @@ header:hover::after {
     text-align: justify;
 }
 
-.hero article h2 {
+.article h2 {
     margin-left: 20px;
 }
 
-.hero article img {
+.article img {
     width: 250px;
     height: auto;
     float: right;
@@ -186,17 +193,18 @@ header:hover::after {
     box-shadow: 0 0 30px var(--shadow-color);
 }
 
-.hero article p {
+.article p {
     display: block;
     overflow: hidden;
-    color: var(--heading-color);
+    color: var(--primary-color);
     font-size: 1.3rem;
     font-weight: 700;
 }
 
-/* History class */
-
-.history {
+.history,
+.adventure,
+.contact,
+.map {
     background-color: var(--accent2-color);
     padding: 3rem;
     display: grid;
@@ -204,14 +212,16 @@ header:hover::after {
     justify-items: center;
 }
 
-.history h2 {
+.history h2,
+.adventure h1 {
 
     grid-column: 1/4;
     font-size: 2rem;
     padding-bottom: 30px;
 }
 
-.history img {
+.history img,
+.adventure img {
     width: 320px;
     height: auto;
     border-radius: 10px;
@@ -219,15 +229,14 @@ header:hover::after {
     box-shadow: 0 0 70px var(--shadow-color);
 }
 
-.history p {
+.history p,
+.adventure p {
     font-size: 1.3rem;
     font-weight: 700;
     padding: 2px;
     margin: 3px;
-    color: var(--heading-color);
+    color: var(--primary-color);
 }
-
-/* Pictures class */
 
 .pictures {
     background-color: var(--accent1-color);
@@ -251,8 +260,267 @@ header:hover::after {
     box-shadow: 0 0 30px var(--shadow-color);
 }
 
-.pictures figure figcaption {
+.pictures figure p {
     font-size: 1rem;
     text-align: center;
-    color: var(--heading-color);
+    color: var(--primary-color);
+}
+
+/* CSS for contact website*/
+
+
+/*info section */
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../images/contactimg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-weight: 300;
+    color: var(--font-color);
+}
+
+.content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--font-color);
+}
+
+.content p {
+    font-size: 1.2rem;
+    color: var(--font-color);
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.icon {
+    min-width: 60px;
+    height: 60px;
+    background: var(--font-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    color: #00008b;
+}
+
+.text {
+    margin-left: 20px;
+}
+
+.text p {
+    display: flex;
+    margin-left: 10px;
+    font-size: 16px;
+    color: var(--font-color);
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.text h3 {
+    font-weight: 500;
+}
+
+.contactForm {
+    width: 40%;
+    padding: 40px;
+    background: var(--font-color);
+}
+
+.contactForm h2 {
+    font-size: 30px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.inputBox input,
+.inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.inputBox input:focus ~ span,
+.inputBox input:valid ~ span,
+.inputBox textarea:focus ~ span,
+.inputBox textarea:valid ~ span {
+    color: var(--secondary-color);
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.inputBox input[type="submit"] {
+    width: 100px;
+    background: var(--secondary-color);
+    color: var(--font-color);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+fieldset {
+    display: flexbox;
+    margin: 0;
+    padding: 1rem;
+    border: 1.5px solid var(--secondary-color);
+}
+
+legend {
+    padding: .5rem;
+    color: var(--primary-color);
+
+}
+
+label {
+    color: var(--primary-color);
+}
+
+input[type="radio"] {
+    accent-color: var(--secondary-color);
+    width: 18px;
+    height: 18px;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    vertical-align: text-bottom;
+    accent-color: var(--secondary-color);
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--secondary-color);
+}
+
+@media (max-width: 991px) {
+    .contact {
+        padding: 50px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container .contactInfo {
+        margin-bottom: 40px;
+    }
+
+    .container .contactInfo {
+        width: 100%;
+    }
+
+}
+
+/* Map */
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10em;
+}
+
+.map .box {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map .box h1 {
+    color: var(--primary-color);
+    font-size: 38px;
+}
+
+iframe {
+    border-radius: 20px;
+    border: 2px solid var(--primary-color);
+    width: 400px;
+    height: 400px;
+    transition: 0.3s ease-in-out;
+}
+
+iframe:hover {
+    transform: scale(1.1);
+}
+
+/* Adventure section */
+.adventure img {
+    width: 350px;
+    height: auto;
+}
+
+figure {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+figcaption {
+    margin-top: .5em;
+}
+
+figcaption .title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+figcaption .subtitle {
+    font-size: .9em;
+    margin: 0;
+    color: var(--primary-color);
 }
