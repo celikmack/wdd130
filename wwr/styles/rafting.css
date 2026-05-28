@@ -161,7 +161,7 @@ header:hover::after {
     opacity: .8;
 }
 
-.hero .article {
+.hero article {
     position: absolute;
     bottom: 25px;
     right: 25px;
@@ -172,11 +172,11 @@ header:hover::after {
     text-align: justify;
 }
 
-.hero .article h2 {
+.hero article h2 {
     margin-left: 20px;
 }
 
-.hero .article img {
+.hero article img {
     width: 250px;
     height: auto;
     float: right;
@@ -186,7 +186,7 @@ header:hover::after {
     box-shadow: 0 0 30px var(--shadow-color);
 }
 
-.hero .article p {
+.hero article p {
     display: block;
     overflow: hidden;
     color: var(--primary-color);
