@@ -288,6 +288,17 @@ header:hover::after {
     color: var(--font-color);
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clear: rect(0,0,0,0);
+    border: 0;
+}
+
 .content {
     max-width: 800px;
     text-align: center;
@@ -389,7 +400,7 @@ header:hover::after {
     resize: none;
 }
 
-.inputBox span {
+.inputBox label {
     position: absolute;
     left: 0;
     padding: 5px 0;
@@ -400,16 +411,16 @@ header:hover::after {
     color: #666;
 }
 
-.inputBox input:focus ~ span,
-.inputBox input:valid ~ span,
-.inputBox textarea:focus ~ span,
-.inputBox textarea:valid ~ span {
+.inputBox input:focus ~ label,
+.inputBox input:valid ~ label,
+.inputBox textarea:focus ~ label,
+.inputBox textarea:valid ~ label {
     color: var(--secondary-color);
     font-size: 12px;
     transform: translateY(-20px);
 }
 
-.inputBox input[type="submit"] {
+.inputBox button {
     width: 100px;
     background: var(--secondary-color);
     color: var(--font-color);
@@ -420,7 +431,7 @@ header:hover::after {
 }
 
 fieldset {
-    display: flexbox;
+    display: flex;
     margin: var(--margin);
     padding: 1rem;
     border: 1.5px solid var(--secondary-color);

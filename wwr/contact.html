@@ -32,6 +32,7 @@
     <main>
         
         <section class="contact">
+            <img src="../images.contactimg.jpg" alt="Rafting on a river at sunset" class="visually-hidden">
             <h1>Macêdo Water Rafting</h1>
             <div class="content">
                 <h2>Contact Us</h2>
@@ -69,12 +70,12 @@
                     <form>
                         <h2>Send Message</h2>
                         <div class="inputBox">
-                            <input type="text" name="" required="required">
-                            <span>Full Name</span>
+                            <input type="text" id="fullname" name="fullname" required="required">
+                            <label for="fullname">Full Name</label>
                         </div>
                         <div class="inputBox">
-                            <input type="text" name="" required="required">
-                            <span>Email</span>
+                            <input type="email" id="email" name="email" required="required">
+                            <label for="email">E-mail</label>
                         </div>
 
                         <fieldset class="radio">
@@ -83,21 +84,21 @@
                                 <li>
                                     <label for="title_1">
                                         <input type="radio" id="title_1" name="title"
-                                          value="inquiry" />
+                                          value="inquiry">
                                         General Inquiry
                                     </label>
                                 </li>
                                 <li>
                                     <label for="title_2">
                                         <input type="radio" id="title_2" name="title"
-                                          value="question" />
+                                          value="question">
                                         Reservation Question
                                     </label>
                                 </li>
                                 <li>
                                     <label for="title_3">
                                         <input type="radio" id="title_3" name="title"
-                                          value="suggestion" />
+                                          value="suggestion">
                                         Website Suggestion
                                     </label>
                                 </li>
@@ -105,8 +106,8 @@
                         </fieldset>
 
                         <div class="inputBox">
-                            <textarea required="required"></textarea>
-                            <span>Type your message...</span>
+                            <textarea id="message" name="message" required="required"></textarea>
+                            <label for="message">Type your message...</label>
                         </div>
 
                         <div class="checkbox">
@@ -117,7 +118,7 @@
                         </div>
 
                         <div class="inputBox">
-                            <input type="submit" name="" value="Send">
+                            <button type="submit" id="send" name="send">Send</button>
                         </div>
                     </form>
                 </div>
@@ -179,7 +180,6 @@
             </a>
         </nav>
     </footer>
-    </main>
 </body>
 
 
