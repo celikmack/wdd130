@@ -3,7 +3,6 @@
     --secondary-color: #4caf50;
     --accent1-color: #ecf0f1;
     --accent2-color: #bdc3c7;
-    --heading-color: #00008b;
     --font-color: #fff;
     --shadow-color: #808080;
 }
@@ -162,7 +161,7 @@ header:hover::after {
     opacity: .8;
 }
 
-.article {
+.hero .article {
     position: absolute;
     bottom: 25px;
     right: 25px;
@@ -173,11 +172,11 @@ header:hover::after {
     text-align: justify;
 }
 
-.article h2 {
+.hero .article h2 {
     margin-left: 20px;
 }
 
-.article img {
+.hero .article img {
     width: 250px;
     height: auto;
     float: right;
@@ -187,7 +186,7 @@ header:hover::after {
     box-shadow: 0 0 30px var(--shadow-color);
 }
 
-.article p {
+.hero .article p {
     display: block;
     overflow: hidden;
     color: var(--primary-color);
