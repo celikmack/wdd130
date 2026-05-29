@@ -1,0 +1,260 @@
+:root {
+    --primary-color: #173f67;
+    --secondary-color: #4caf50;
+    --accent1-color: #ecf0f1;
+    --accent2-color: #bdc3c7;
+    --font-color: #fff;
+    --shadow-color: #808080;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    margin: 1rem;
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    align-items: center;
+    max-width: 100%;
+}
+
+header p,
+nav a {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+h1,
+h2 {
+    color: var(--primary-color);
+    font-family: var(--font-family);
+}
+
+nav {
+    justify-self: end;
+    padding-right: 1rem;
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+
+footer nav a {
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+footer nav img {
+    width: 30px;
+    height: auto;
+}
+
+footer p {
+    color: var(--font-color);
+    font-size: 1.2rem;
+
+}
+
+/* Global Selectors*/
+
+.hero,
+.history,
+.pictures,
+footer {
+    margin: 1rem;
+}
+
+/* Header classes*/
+.logo img {
+    margin: 0rem .25rem 0 2rem;
+    width: 150px;
+    height: auto;
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+
+}
+
+.navigation li {
+
+    justify-content: flex-end;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: var(--font-color);
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+    color: var(--secondary-color);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent,
+            rgba(255, 255, 255, .4), transparent);
+    transition: 0.5s;
+}
+
+header:hover::after {
+    left: 100%;
+    color: var(--secondary-color);
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+/* Hero classes */
+
+.hero {
+    position: relative;
+    display: block;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    top: 20px;
+    padding: 8px 0;
+    font-size: 36px;
+    text-align: center;
+    background-color: var(--font-color);
+    opacity: .8;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    background-color: rgb(255, 255, 255, .7);
+    border: 1px solid #000;
+    padding: .65rem;
+    overflow: auto;
+    text-align: justify;
+}
+
+.hero article h2 {
+    margin-left: 20px;
+}
+
+.hero article img {
+    width: 250px;
+    height: auto;
+    float: right;
+    margin-left: 1rem;
+    border-radius: 10px;
+    border: 2px solid #302f2f;
+    box-shadow: 0 0 30px var(--shadow-color);
+}
+
+.hero article p {
+    display: block;
+    overflow: hidden;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+/* History class */
+
+.history {
+    background-color: var(--accent2-color);
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.history h2 {
+
+    grid-column: 1/4;
+    font-size: 2rem;
+    padding-bottom: 30px;
+}
+
+.history img {
+    width: 320px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #d6d3d3;
+    box-shadow: 0 0 70px var(--shadow-color);
+}
+
+.history p {
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 2px;
+    margin: 3px;
+    color: var(--primary-color);
+}
+
+/* Pictures class */
+
+.pictures {
+    background-color: var(--accent1-color);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+}
+
+.pictures h2 {
+    grid-column: 1/6;
+    padding: 50px;
+    font-size: 2rem;
+
+}
+
+.pictures img {
+    width: 200px;
+    height: 140px;
+    padding: 2px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px var(--shadow-color);
+}
+
+.pictures figcaption {
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--primary-color);
+}
+
